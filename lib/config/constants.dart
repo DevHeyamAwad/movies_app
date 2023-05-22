@@ -1,3 +1,3 @@
 class Constans {
-  static const String klinkPro = '';
+  static const String kLinkeProject = '';
 }

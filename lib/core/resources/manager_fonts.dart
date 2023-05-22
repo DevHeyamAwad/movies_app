@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../util/size_util.dart';
 
 class ManagerFontFamily {
-  static const String fontFamily = "Poppins";
+  static const String fontFamily = "";
 }
 
 class ManagerFontWeight {

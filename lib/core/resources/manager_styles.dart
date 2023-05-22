@@ -1,5 +1,6 @@
-import 'package:act_hub/core/resources/manager_fonts.dart';
 import 'package:flutter/material.dart';
+
+import 'manager_fonts.dart';
 
 TextStyle _textStyle(
     {required String fontFamily,
