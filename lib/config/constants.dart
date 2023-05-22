@@ -1,4 +1,4 @@
-class Constans {
+class Constants {
   static const String kLinkeProject = '';
   static const double deviceWidth = 375;
   static const double deviceHeight = 812;

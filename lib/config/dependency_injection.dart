@@ -12,7 +12,3 @@ initSplash() {
 finishSplash() {
   Get.delete<SplashController>();
 }
-
-initOutBoarding() {
-  finishSplash();
-}
