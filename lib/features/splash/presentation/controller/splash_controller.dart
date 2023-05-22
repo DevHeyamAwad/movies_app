@@ -10,7 +10,7 @@ class SplashController extends GetxController {
   void onInit() {
     super.onInit();
     Future.delayed(
-        Duration(
+        const Duration(
           seconds: Constants.splashDuration,
         ),
         () {});

@@ -5,6 +5,7 @@ import '../features/splash/presentation/view/splash_view.dart';
 
 class Routes {
   static const String splashView = '/splash_view';
+  static const String outBoardingView = '/out_boarding_view';
 }
 
 class RouteGenerator {
