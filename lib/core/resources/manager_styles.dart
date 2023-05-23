@@ -1,5 +1,6 @@
-import 'package:act_hub/core/resources/manager_fonts.dart';
 import 'package:flutter/material.dart';
+
+import 'manager_fonts.dart';
 
 TextStyle _textStyle(
     {required String fontFamily,
@@ -16,13 +17,13 @@ TextStyle _textStyle(
   );
 }
 
-TextStyle getMediumStyle(
-    {required String fontFamily,
+TextStyle getMediumTextStyle(
+    {String fontFamily = ManagerFontFamily.fontFamily,
     required Color color,
     TextDecoration decoration = TextDecoration.none,
     required double fontSize}) {
   return TextStyle(
-      fontFamily: ManagerFontFamily.fontFamily,
+      fontFamily: fontFamily,
       fontWeight: ManagerFontWeight.medium,
       color: color,
       decoration: decoration,
@@ -30,12 +31,12 @@ TextStyle getMediumStyle(
 }
 
 TextStyle getRegularStyle(
-    {required String fontFamily,
+    {String fontFamily = ManagerFontFamily.fontFamily,
     required Color color,
     TextDecoration decoration = TextDecoration.none,
     required double fontSize}) {
   return TextStyle(
-      fontFamily: ManagerFontFamily.fontFamily,
+      fontFamily: fontFamily,
       fontWeight: ManagerFontWeight.regular,
       color: color,
       decoration: decoration,
