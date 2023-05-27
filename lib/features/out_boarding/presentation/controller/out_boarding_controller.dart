@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:movies_app/core/resources/manager_assets.dart';
 import 'package:movies_app/core/resources/manager_strings.dart';
@@ -6,6 +7,8 @@ import '../../../../core/widegts/scaffold_with_background_image.dart';
 import '../view/widgets/out_boarding_item.dart';
 
 class OutBoardingController extends GetxController {
+  late PageController pageController;
+
   final List pageViewItems = [
     scaffoldWithBackGroundImage(
       image: ManagerAssets.outBoardingBackground1,
@@ -29,4 +32,18 @@ class OutBoardingController extends GetxController {
       ),
     ),
   ];
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+    pageController = PageController();
+  }
+
+  @override
+  void onClose() {
+    // TODO: implement onClose
+    pageController.dispose();
+    super.onClose();
+  }
 }
