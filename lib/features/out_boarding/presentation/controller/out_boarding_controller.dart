@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
+import 'package:movies_app/config/constants.dart';
 import 'package:movies_app/core/resources/manager_assets.dart';
 import 'package:movies_app/core/resources/manager_strings.dart';
 
@@ -8,7 +9,9 @@ import '../view/widgets/out_boarding_item.dart';
 
 class OutBoardingController extends GetxController {
   late PageController pageController;
-
+  static const firstPage = 0;
+  static const lastPage = 2;
+  int currentPage = firstPage;
   final List pageViewItems = [
     scaffoldWithBackGroundImage(
       image: ManagerAssets.outBoardingBackground1,
@@ -45,5 +48,35 @@ class OutBoardingController extends GetxController {
     // TODO: implement onClose
     pageController.dispose();
     super.onClose();
+  }
+
+  void animatedToPage({required int index}) {
+    pageController.animateToPage(
+      index,
+      duration: const Duration(seconds: Constants.outBoardingDurationTime),
+      curve: Curves.fastLinearToSlowEaseIn,
+    );
+  }
+
+  bool isLastedPage() {
+    return currentPage < lastPage;
+  }
+
+  void nextPage() {
+    if (isLastedPage()) {
+      animatedToPage(index: ++currentPage);
+      update();
+    }
+  }
+
+  bool isNotLastedPage() {
+    return currentPage > lastPage;
+  }
+
+  void previousPage() {
+    if (isNotLastedPage()) {
+      animatedToPage(index: --currentPage);
+      update();
+    }
   }
 }
