@@ -27,7 +27,7 @@ class SplashView extends StatelessWidget {
           ),
           Text('MAO TRAILER',
               style: TextStyle(
-                  fontFamily: 'SFPRODISPLAY',
+                  fontFamily: 'SFPRODISPLAYREGULAR',
                   color: ManagerColors.white,
                   fontSize: ManagerSize.s16)),
         ],
