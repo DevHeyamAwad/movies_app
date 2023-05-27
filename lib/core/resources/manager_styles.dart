@@ -18,7 +18,7 @@ TextStyle _textStyle(
 }
 
 TextStyle getMediumTextStyle(
-    {String fontFamily = ManagerFontFamily.fontFamilyMedium,
+    {String fontFamily = ManagerFontFamily.fontFamily,
     required Color color,
     TextDecoration decoration = TextDecoration.none,
     required double fontSize}) {
@@ -31,7 +31,7 @@ TextStyle getMediumTextStyle(
 }
 
 TextStyle getRegularStyle(
-    {String fontFamily = ManagerFontFamily.fontFamilyRegular,
+    {String fontFamily = ManagerFontFamily.fontFamily,
     required Color color,
     TextDecoration decoration = TextDecoration.none,
     required double fontSize}) {
@@ -50,7 +50,7 @@ TextStyle getBoldTextStyle({
 }) {
   return _textStyle(
     fontSize: fontSize,
-    fontFamily: ManagerFontFamily.fontFamilyBold,
+    fontFamily: ManagerFontFamily.fontFamily,
     fontWeight: ManagerFontWeight.bold,
     color: color,
     decoration: decoration,

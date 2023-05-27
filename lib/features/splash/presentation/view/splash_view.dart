@@ -24,8 +24,8 @@ class SplashView extends StatelessWidget {
             width: ManagerWidth.w102,
             height: ManagerHeight.h107,
           ),
-          const SizedBox(
-            height: 5,
+          SizedBox(
+            height: ManagerHeight.h5,
           ),
           Text(
             ManagerStrings.splashText,
