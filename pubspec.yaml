@@ -81,30 +81,14 @@ flutter:
   fonts:
     - family: SFPRODISPLAY
       fonts:
-        - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF
-    # - family: SFPRODISPLAYBOLD
-    #   fonts:    
+        - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF   
         - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
-    # - family: SFPRODISPLAYHEAVYITALIC
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF
-    # - family: SFPRODISPLAYLIGHTITALIC
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF
-    # - family: SFPRODISPLAYMEDIUM
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYMEDIUM.OTF
-    # - family: SFPRODISPLAYREGULAR
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
-    # - family: SFPRODISPLAYSEMIBOLDITALIC
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF
-    # - family: SFPRODISPLAYTHINITALIC
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYTHINITALIC.OTF
-    # - family: SFPRODISPLAYULTRALIGHTITALIC
-    #   fonts:
         - asset: assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF
 
   #   - family: Trajan Pro
