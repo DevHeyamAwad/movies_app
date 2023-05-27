@@ -79,11 +79,34 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: SFPRODISPLAY
+    - family: SFPRODISPLAYBLACKITALIC
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF
+    - family: SFPRODISPLAYBOLD
+      fonts:    
+        - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
+    - family: SFPRODISPLAYHEAVYITALIC
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF
+    - family: SFPRODISPLAYLIGHTITALIC
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF
+    - family: SFPRODISPLAYMEDIUM
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYMEDIUM.OTF
+    - family: SFPRODISPLAYREGULAR
       fonts:
         - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
-        # - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF
-        # - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
+    - family: SFPRODISPLAYSEMIBOLDITALIC
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF
+    - family: SFPRODISPLAYTHINITALIC
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYTHINITALIC.OTF
+    - family: SFPRODISPLAYULTRALIGHTITALIC
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
