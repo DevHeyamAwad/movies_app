@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:movies_app/config/constants.dart';
 import 'package:movies_app/config/dependency_injection.dart';
@@ -7,6 +9,7 @@ import 'package:movies_app/core/resources/manager_strings.dart';
 import 'package:movies_app/core/storage/local/app_settings_shared_preferances.dart';
 
 import '../../../../core/widegts/scaffold_with_background_image.dart';
+import '../../../../routes/routes.dart';
 import '../view/widgets/out_boarding_item.dart';
 
 class OutBoardingController extends GetxController {
@@ -14,7 +17,8 @@ class OutBoardingController extends GetxController {
   static const firstPage = 0;
   static const lastPage = 2;
   int currentPage = firstPage;
-final AppSettingsSharedPreferences _appSettingsSharedPreferences = instance<AppSettingsSharedPreferences>();
+  final AppSettingsSharedPreferences _appSettingsSharedPreferences =
+      instance<AppSettingsSharedPreferences>();
 
   final List pageViewItems = [
     scaffoldWithBackGroundImage(
@@ -84,7 +88,14 @@ final AppSettingsSharedPreferences _appSettingsSharedPreferences = instance<AppS
     }
   }
 
-  Future<void> setCurrentPage() async {
-    await 
+  Future<void> setCurrentPage(int index) async {
+    await _appSettingsSharedPreferences.setOutBoardingViewed();
+    currentPage = index;
+    update();
+  }
+
+  Future<void> getStart() async {
+    await _appSettingsSharedPreferences.setOutBoardingViewed();
+    Get.offAll(Routes.loginView);
   }
 }
