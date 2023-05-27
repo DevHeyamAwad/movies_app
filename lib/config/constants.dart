@@ -5,3 +5,7 @@ class Constants {
   static const int splashDuration = 3;
   static const double elevationAppBar = 0;
 }
+
+class ConstantsPrefsKeys {
+  static const String outBoardingViewedKey = 'out_boarding_viewed';
+}
