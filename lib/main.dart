@@ -4,9 +4,11 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:movies_app/routes/routes.dart';
 
 import 'config/constants.dart';
+import 'config/dependency_injection.dart';
 import 'core/service/theme_service.dart';
 
-void main() {
+void main() async {
+  await initModule();
   runApp(MyApp());
 }
 
@@ -25,10 +27,12 @@ class MyApp extends StatelessWidget {
           Constants.deviceHeight,
         ),
         builder: (context, child) {
-          return const GetMaterialApp(
+          return GetMaterialApp(
             debugShowCheckedModeBanner: false,
             onGenerateRoute: RouteGenerator.getRoute,
             initialRoute: Routes.splashView,
+            themeMode: _themeService.getThemeMode(),
+            theme: _themeService.getThemeData(),
           );
         });
   }

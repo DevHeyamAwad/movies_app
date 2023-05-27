@@ -10,6 +10,7 @@ class OutBoardingItem extends StatelessWidget {
       children: [
         SizedBox(
           height: ManagerHeight.h444,
+          width: double.infinity,
         ),
         Text(text),
         SizedBox(

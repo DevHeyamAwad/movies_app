@@ -3,6 +3,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get_it/get_it.dart';
 import 'package:movies_app/core/storage/local/app_settings_shared_preferances.dart';
+import 'package:movies_app/features/out_boarding/presentation/controller/out_boarding_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../features/splash/presentation/controller/splash_controller.dart';
@@ -29,4 +30,9 @@ finishSplash() {
 
 initOutBoarding() {
   finishSplash();
+  Get.put<OutBoardingController>(OutBoardingController());
+}
+
+finishOutBoarding() {
+  Get.delete<OutBoardingController>();
 }

@@ -8,16 +8,16 @@ class OutBoardingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(child: Container(
-        child: GetBuilder<OutBoardingController>(
-          builder: (controller) {
-            return PageView(
-              children: [...controller.pageViewItems],
-            );
+    return GetBuilder<OutBoardingController>(
+      builder: (controller) {
+        return PageView(
+          controller: controller.pageController,
+          children: [...controller.pageViewItems],
+          onPageChanged: (index) {
+            controller.setCurrentPage(index);
           },
-        ),
-      )),
+        );
+      },
     );
   }
 }
