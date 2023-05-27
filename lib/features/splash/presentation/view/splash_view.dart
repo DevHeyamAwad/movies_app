@@ -1,8 +1,10 @@
 import 'package:flutter/widgets.dart';
 import 'package:movies_app/core/resources/manager_colors.dart';
+import 'package:movies_app/core/resources/manager_strings.dart';
 
 import '../../../../core/resources/manager_assets.dart';
 import '../../../../core/resources/manager_sizes.dart';
+import '../../../../core/resources/manager_styles.dart';
 import '../../../../core/widegts/scaffold_with_background_image.dart';
 
 class SplashView extends StatelessWidget {
@@ -25,11 +27,13 @@ class SplashView extends StatelessWidget {
           const SizedBox(
             height: 5,
           ),
-          Text('MAO TRAILER',
-              style: TextStyle(
-                  fontFamily: 'SFPRODISPLAYREGULAR',
-                  color: ManagerColors.white,
-                  fontSize: ManagerSize.s16)),
+          Text(
+            ManagerStrings.splashText,
+            style: getRegularStyle(
+              color: ManagerColors.white,
+              fontSize: ManagerSize.s16,
+            ),
+          ),
         ],
       ),
     );
