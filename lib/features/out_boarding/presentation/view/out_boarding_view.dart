@@ -6,7 +6,7 @@ class OutBoardingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: SafeArea(child: Container()),
     );
   }
 }

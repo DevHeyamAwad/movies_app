@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/core/widegts/will_pop_scope.dart';
 import '../resources/manager_colors.dart';
-import '../resources/manager_images.dart';
+import '../resources/manager_assets.dart';
 
 Widget scaffoldWithBackGroundImage({
   required Widget child,

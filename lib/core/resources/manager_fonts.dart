@@ -3,7 +3,17 @@ import 'package:flutter/material.dart';
 import '../util/size_util.dart';
 
 class ManagerFontFamily {
-  static const String fontFamily = "";
+  static const String fontFamily = "SFPRODISPLAY";
+  static const String fontFamilyBlackItalic = "SFPRODISPLAYBLACKITALIC";
+  static const String fontFamilyBold = "SFPRODISPLAYBOLD";
+  static const String fontFamilyHeavyItalic = "SFPRODISPLAYHEAVYITALIC";
+  static const String fontFamilyLightItalic = "SFPRODISPLAYLIGHTITALIC";
+  static const String fontFamilyMedium = "SFPRODISPLAYMEDIUM";
+  static const String fontFamilyRegular = "SFPRODISPLAYREGULAR";
+  static const String fontFamilySemiBoldItalic = "SFPRODISPLAYSEMIBOLDITALIC";
+  static const String fontFamilyThinItalic = "SFPRODISPLAYTHINITALIC";
+  static const String fontFamilyUltraLightItalic =
+      "SFPRODISPLAYULTRALIGHTITALIC";
 }
 
 class ManagerFontWeight {
