@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:movies_app/core/resources/manager_sizes.dart';
-import 'package:movies_app/core/resources/manager_strings.dart';
 
 class OutBoardingItem extends StatelessWidget {
-  const OutBoardingItem({super.key});
-
+  OutBoardingItem({super.key, required this.text, required this.image});
+  String text, image;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -14,10 +11,14 @@ class OutBoardingItem extends StatelessWidget {
         SizedBox(
           height: ManagerHeight.h444,
         ),
-        const Text(ManagerStrings.moviesApp),
+        Text(text),
         SizedBox(
           height: ManagerHeight.h142,
-        )
+        ),
+        Image.asset(image),
+        SizedBox(
+          height: ManagerHeight.h70,
+        ),
       ],
     );
   }
