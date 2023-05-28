@@ -28,9 +28,6 @@ class OutBoardingItem extends StatelessWidget {
           height: ManagerHeight.h70,
         ),
         Image.asset(image),
-        SizedBox(
-          height: ManagerHeight.h70,
-        ),
       ],
     );
   }
