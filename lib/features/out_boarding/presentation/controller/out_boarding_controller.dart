@@ -36,14 +36,12 @@ class OutBoardingController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
     pageController = PageController();
   }
 
   @override
   void onClose() {
-    // TODO: implement onClose
     pageController.dispose();
     super.onClose();
   }
@@ -86,6 +84,16 @@ class OutBoardingController extends GetxController {
 
   Future<void> getStart() async {
     await _appSettingsSharedPreferences.setOutBoardingViewed();
-    Get.toNamed(Routes.loginView);
+    Get.offAllNamed(Routes.loginView);
+  }
+
+  void skipPage() {
+    pageController.animateToPage(
+      lastPage,
+      duration: const Duration(seconds: Constants.outBoardingDurationTime),
+      curve: Curves.fastLinearToSlowEaseIn,
+    );
+    currentPage = lastPage;
+    update();
   }
 }
