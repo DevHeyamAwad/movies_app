@@ -8,6 +8,7 @@ Widget mainButton({
   void Function()? onPressed,
   ShapeBorder? shapeBorder,
   Color? color,
+  Color? borderColor,
   double? minWidth,
   double? height,
   double? elevation,
@@ -16,13 +17,16 @@ Widget mainButton({
     onPressed: onPressed.onNull(),
     shape: shapeBorder ??
         RoundedRectangleBorder(
+          side: BorderSide(
+            color: borderColor.onNull(),
+          ),
           borderRadius: BorderRadius.circular(
-            ManagerRadius.r12,
+            ManagerRadius.r27,
           ),
         ),
     color: color.onNull(),
-    minWidth: minWidth.onNull(),
-    height: height.onNull(),
+    minWidth: ManagerWidth.w192,
+    height: ManagerHeight.h54,
     elevation: elevation ?? Constants.elevationButton,
     child: child,
   );
