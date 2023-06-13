@@ -8,4 +8,5 @@ class ManagerStrings {
       'Know the movie is not worth Watching';
   static const String outBoardingTitle3 = 'Real-time updates movie Trailer';
   static const String getStartedButton = 'Let\'s get started';
+  static const String next = 'Next';
 }
