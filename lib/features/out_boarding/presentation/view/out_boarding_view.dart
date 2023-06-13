@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:movies_app/core/resources/manager_colors.dart';
@@ -28,6 +29,7 @@ class OutBoardingView extends StatelessWidget {
             children: [
               Expanded(
                 child: PageView(
+                  dragStartBehavior: DragStartBehavior.down,
                   controller: controller.pageController,
                   children: [
                     ...controller.pageViewItems,
@@ -37,17 +39,57 @@ class OutBoardingView extends StatelessWidget {
                   },
                 ),
               ),
-              mainButton(
-                height: ManagerHeight.h54,
-                child: Text(
-                  ManagerStrings.getStartedButton,
-                  style: getRegularStyle(
-                      color: ManagerColors.outBoradingTextColor,
-                      fontSize: ManagerFontSize.s20),
+              Visibility(
+                visible: controller.isLastedPage(),
+                replacement: Container(
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [ManagerColors.orange, ManagerColors.pink],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(
+                      ManagerRadius.r27,
+                    ),
+                  ),
+                  child: mainButton(
+                    height: ManagerHeight.h54,
+                    child: Text(
+                      ManagerStrings.getStartedButton,
+                      style: getRegularStyle(
+                        color: ManagerColors.outBoradingTextColor,
+                        fontSize: ManagerFontSize.s20,
+                      ),
+                    ),
+                    onPressed: () {
+                      controller.getStart();
+                    },
+                  ),
                 ),
-                onPressed: () {
-                  controller.getStart();
-                },
+                child: mainButton(
+                  borderColor: ManagerColors.white,
+                  height: ManagerHeight.h54,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        ManagerStrings.next,
+                        style: getRegularStyle(
+                          color: ManagerColors.outBoradingTextColor,
+                          fontSize: ManagerFontSize.s20,
+                        ),
+                      ),
+                      const Icon(
+                        Icons.arrow_forward,
+                        color: ManagerColors.white,
+                      )
+                    ],
+                  ),
+                  onPressed: () {
+                    controller.nextPage();
+                  },
+                ),
               ),
               SizedBox(
                 height: ManagerHeight.h40,
