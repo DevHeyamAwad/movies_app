@@ -9,10 +9,10 @@ class ManagerColors {
   static const Color buttonBorderColor = Colors.white;
   static const Color pinkShadowColor = Color(0xffDB3167);
   static const Color yellowShadowColor = Color(0xffF5D547);
-
+  static const Color outBoradingTextColor = Colors.white;
   static const Color darkBlueShadowColor = Color(0xff142246);
   static const Color lightBlueShadowColor = Color(0xff345CC5);
-
+  static const Color transparent = Colors.transparent;
   static const Color moviesColor = Colors.black;
 
   static const Color textCatColor = Color(0xFF666666);

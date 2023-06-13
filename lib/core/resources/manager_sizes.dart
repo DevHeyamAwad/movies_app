@@ -12,7 +12,7 @@ class ManagerRadius {
   static double r18 = SizeUtil.setRadius(18.0);
   static double r20 = SizeUtil.setRadius(20.0);
   static double r22 = SizeUtil.setRadius(22.0);
-  static double r24 = SizeUtil.setRadius(24.0);
+  static double r27 = SizeUtil.setRadius(27.0);
   static double r26 = SizeUtil.setRadius(26.0);
   static double r28 = SizeUtil.setRadius(28.0);
   static double r30 = SizeUtil.setRadius(30.0);
@@ -42,7 +42,7 @@ class ManagerWidth {
   static double w40 = SizeUtil.setWidth(40.0);
   static double w49 = SizeUtil.setWidth(49.0);
   static double w68 = SizeUtil.setWidth(68.0);
-  static double w76 = SizeUtil.setWidth(76.0);
+  static double w192 = SizeUtil.setWidth(192.0);
   static double w80 = SizeUtil.setWidth(80.0);
   static double w100 = SizeUtil.setWidth(100.0);
   static double w128 = SizeUtil.setWidth(128.0);
@@ -73,14 +73,14 @@ class ManagerHeight {
   static double h30 = SizeUtil.setHeight(30.0);
   static double h39 = SizeUtil.setHeight(30.0);
   static double h40 = SizeUtil.setHeight(40.0);
-  static double h48 = SizeUtil.setHeight(48.0);
+  static double h54 = SizeUtil.setHeight(54.0);
   static double h60 = SizeUtil.setHeight(60.0);
   static double h70 = SizeUtil.setHeight(60.0);
   static double h80 = SizeUtil.setHeight(80.0);
   static double h100 = SizeUtil.setHeight(100.0);
   static double h110 = SizeUtil.setHeight(110.0);
   static double h115 = SizeUtil.setHeight(115.0);
-  static double h130 = SizeUtil.setHeight(130.0);
+  static double h142 = SizeUtil.setHeight(142.0);
   static double h160 = SizeUtil.setHeight(160.0);
   static double h180 = SizeUtil.setHeight(180.0);
   static double h205 = SizeUtil.setHeight(205.0);
@@ -91,7 +91,7 @@ class ManagerHeight {
   static double h375 = SizeUtil.setHeight(375.0);
   static double h400 = SizeUtil.setHeight(400.0);
   static double h460 = SizeUtil.setHeight(460.0);
-  static double h500 = SizeUtil.setHeight(530.0);
+  static double h444 = SizeUtil.setHeight(444.0);
   static double h575 = SizeUtil.setHeight(575.0);
   static double h107 = SizeUtil.setHeight(107.0);
   static double h200 = SizeUtil.setHeight(200.0);

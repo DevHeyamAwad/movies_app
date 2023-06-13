@@ -40,7 +40,7 @@ class ManagerFontSize {
   static double s26 = SizeUtil.setFontSize(26.0);
   static double s28 = SizeUtil.setFontSize(28.0);
   static double s30 = SizeUtil.setFontSize(30.0);
-  static double s35 = SizeUtil.setFontSize(35.0);
+  static double s36 = SizeUtil.setFontSize(36.0);
   static double s40 = SizeUtil.setFontSize(40.0);
   static double s80 = SizeUtil.setFontSize(80.0);
   static double s100 = SizeUtil.setFontSize(100.0);
