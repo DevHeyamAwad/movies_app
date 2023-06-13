@@ -23,6 +23,7 @@ class ManagerColors {
 
   static const Color blueProfile = Color(0xFF446BCF);
   static const Color numberLikes = Color(0xFFD6182A);
+  static const Color grey = Colors.grey;
 
   static const Color background = Color(0xFFF8F8F8);
 }
