@@ -9,7 +9,7 @@ import '../../../../core/resources/manager_assets.dart';
 import '../../../../core/resources/manager_strings.dart';
 import '../../../../core/resources/manager_styles.dart';
 import '../../../../core/widegts/scaffold_with_background_image.dart';
-import '../../../../core/widgets/main_button.dart';
+import '../../../../core/widegts/main_button.dart';
 import '../controller/out_boarding_controller.dart';
 
 class OutBoardingView extends StatelessWidget {
@@ -53,7 +53,7 @@ class OutBoardingView extends StatelessWidget {
                     ),
                   ),
                   child: mainButton(
-                    height: ManagerHeight.h54,
+                    height: ManagerHeight.h39,
                     child: Text(
                       ManagerStrings.getStartedButton,
                       style: getRegularStyle(
@@ -68,7 +68,7 @@ class OutBoardingView extends StatelessWidget {
                 ),
                 child: mainButton(
                   borderColor: ManagerColors.white,
-                  height: ManagerHeight.h54,
+                  height: ManagerHeight.h39,
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -92,7 +92,7 @@ class OutBoardingView extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: ManagerHeight.h40,
+                height: ManagerHeight.h30,
               )
             ],
           ),
