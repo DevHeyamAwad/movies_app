@@ -7,6 +7,8 @@ class Constants {
   static const int outBoardingDurationTime = 1;
   static const double elevationButton = 0;
   static const int sliderItems = 3;
+  static const double paddingIconAppBar = 16;
+  static const double viewportFraction = 0.85;
 }
 
 class ConstantsPrefsKeys {
