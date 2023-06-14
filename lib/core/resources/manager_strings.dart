@@ -1,5 +1,7 @@
 class ManagerStrings {
-  static const String moviesApp = 'Movies';
+  static const String movies = 'MOVIES';
+  static const String tv = 'TV';
+  static const String profile = 'PROFILE';
   static const String noRoutFound = 'No Rout Found';
   static const String splashText = 'MAO TRAILER';
   static const String outBoardingTitle1 =
