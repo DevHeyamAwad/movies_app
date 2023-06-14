@@ -32,7 +32,7 @@ class ManagerWidth {
   static double w12 = SizeUtil.setWidth(12.0);
   static double w14 = SizeUtil.setWidth(14.0);
   static double w16 = SizeUtil.setWidth(16.0);
-  static double w18 = SizeUtil.setWidth(18.0);
+  static double w320 = SizeUtil.setWidth(320.0);
   static double w20 = SizeUtil.setWidth(20.0);
   static double w22 = SizeUtil.setWidth(22.0);
   static double w24 = SizeUtil.setWidth(24.0);
@@ -69,18 +69,18 @@ class ManagerHeight {
   static double h22 = SizeUtil.setHeight(22.0);
   static double h24 = SizeUtil.setHeight(24.0);
   static double h26 = SizeUtil.setHeight(26.0);
-  static double h28 = SizeUtil.setHeight(28.0);
+  static double h45 = SizeUtil.setHeight(45.0);
   static double h30 = SizeUtil.setHeight(30.0);
   static double h39 = SizeUtil.setHeight(30.0);
   static double h40 = SizeUtil.setHeight(40.0);
   static double h54 = SizeUtil.setHeight(54.0);
   static double h60 = SizeUtil.setHeight(60.0);
-  static double h70 = SizeUtil.setHeight(60.0);
+  static double h70 = SizeUtil.setHeight(70.0);
   static double h49 = SizeUtil.setHeight(49.0);
   static double h100 = SizeUtil.setHeight(100.0);
   static double h110 = SizeUtil.setHeight(110.0);
   static double h115 = SizeUtil.setHeight(115.0);
-  static double h142 = SizeUtil.setHeight(142.0);
+  static double h170 = SizeUtil.setHeight(170.0);
   static double h160 = SizeUtil.setHeight(160.0);
   static double h180 = SizeUtil.setHeight(180.0);
   static double h205 = SizeUtil.setHeight(205.0);
@@ -88,8 +88,8 @@ class ManagerHeight {
   static double h230 = SizeUtil.setHeight(230.0);
   static double h240 = SizeUtil.setHeight(250.0);
   static double h300 = SizeUtil.setHeight(300.0);
-  static double h375 = SizeUtil.setHeight(375.0);
-  static double h400 = SizeUtil.setHeight(400.0);
+  static double h50 = SizeUtil.setHeight(50.0);
+  static double h65 = SizeUtil.setHeight(65.0);
   static double h460 = SizeUtil.setHeight(460.0);
   static double h444 = SizeUtil.setHeight(444.0);
   static double h575 = SizeUtil.setHeight(575.0);
@@ -127,6 +127,7 @@ class ManagerIconSize {
   static double s8 = 8;
   static double s10 = 10;
   static double s12 = 12;
+  static double s25 = 25;
 }
 
 class ManagerOpacity {
