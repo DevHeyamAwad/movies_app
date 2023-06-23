@@ -30,7 +30,7 @@ TextStyle getMediumTextStyle(
       fontSize: fontSize);
 }
 
-TextStyle getRegularStyle(
+TextStyle getRegularTextStyle(
     {String fontFamily = ManagerFontFamily.fontFamily,
     required Color color,
     TextDecoration decoration = TextDecoration.none,
