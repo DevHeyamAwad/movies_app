@@ -11,7 +11,6 @@ import '../../../home/presentation/view/home_view.dart';
 class MainController extends GetxController {
   PersistentTabController persistentTabController =
       PersistentTabController(initialIndex: 0);
-  Color color = ManagerColors.grey;
   List<Widget> screens = [
     const HomeView(),
     Container(

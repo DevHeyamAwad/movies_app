@@ -56,7 +56,7 @@ class OutBoardingView extends StatelessWidget {
                     height: ManagerHeight.h39,
                     child: Text(
                       ManagerStrings.getStartedButton,
-                      style: getRegularStyle(
+                      style: getRegularTextStyle(
                         color: ManagerColors.outBoradingTextColor,
                         fontSize: ManagerFontSize.s20,
                       ),
@@ -75,7 +75,7 @@ class OutBoardingView extends StatelessWidget {
                     children: [
                       Text(
                         ManagerStrings.next,
-                        style: getRegularStyle(
+                        style: getRegularTextStyle(
                           color: ManagerColors.outBoradingTextColor,
                           fontSize: ManagerFontSize.s20,
                         ),

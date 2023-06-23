@@ -29,7 +29,7 @@ class SplashView extends StatelessWidget {
           ),
           Text(
             ManagerStrings.splashText,
-            style: getRegularStyle(
+            style: getRegularTextStyle(
               color: ManagerColors.white,
               fontSize: ManagerSize.s16,
             ),
