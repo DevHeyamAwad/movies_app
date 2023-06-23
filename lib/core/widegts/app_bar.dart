@@ -9,7 +9,7 @@ AppBar mainAppBar({IconData? icon, required String? appBarText}) {
   return AppBar(
     title: Text(
       appBarText.onNull(),
-      style: getRegularStyle(
+      style: getRegularTextStyle(
         color: ManagerColors.black,
         fontSize: ManagerSize.s24,
       ),
