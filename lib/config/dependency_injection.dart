@@ -6,6 +6,8 @@ import 'package:movies_app/core/storage/local/app_settings_shared_preferances.da
 import 'package:movies_app/features/out_boarding/presentation/controller/out_boarding_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../features/home/presentation/controller/home_controller.dart';
+import '../features/main/presentation/controller/main_controller.dart';
 import '../features/splash/presentation/controller/splash_controller.dart';
 
 final instance = GetIt.instance;
@@ -35,4 +37,13 @@ initOutBoarding() {
 
 finishOutBoarding() {
   Get.delete<OutBoardingController>();
+}
+
+initMainModule() {
+  Get.put<MainController>(MainController());
+  initHomeModule();
+}
+
+initHomeModule() {
+  Get.put<HomeController>(HomeController());
 }

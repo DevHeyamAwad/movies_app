@@ -7,7 +7,7 @@ class ManagerColors {
   static const Color orange = Color(0xffF99F00);
   static const Color textColor = Colors.white;
   static const Color buttonBorderColor = Colors.white;
-  static const Color pinkShadowColor = Color(0xffDB3167);
+  static const Color pinkShadowColor = Color.fromARGB(50, 219, 49, 103);
   static const Color yellowShadowColor = Color(0xffF5D547);
   static const Color outBoradingTextColor = Colors.white;
   static const Color darkBlueShadowColor = Color(0xff142246);
@@ -23,6 +23,7 @@ class ManagerColors {
 
   static const Color blueProfile = Color(0xFF446BCF);
   static const Color numberLikes = Color(0xFFD6182A);
-
+  static const Color grey = Colors.grey;
+  static const Color greyShadow = Color.fromARGB(150, 158, 158, 158);
   static const Color background = Color(0xFFF8F8F8);
 }
