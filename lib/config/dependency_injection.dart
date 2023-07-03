@@ -1,7 +1,10 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get_it/get_it.dart';
+import 'package:movies_app/core/network/app_api.dart';
+import 'package:movies_app/core/network/dio_factory.dart';
 import 'package:movies_app/core/storage/local/app_settings_shared_preferances.dart';
 import 'package:movies_app/features/out_boarding/presentation/controller/out_boarding_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,6 +23,9 @@ initModule() async {
   instance.registerLazySingleton<SharedPreferences>(() => sharedPreferance);
   instance.registerLazySingleton<AppSettingsSharedPreferences>(
       () => AppSettingsSharedPreferences(instance()));
+  instance.registerLazySingleton(() => DioFactory());
+  Dio dio = await instance<DioFactory>().getDio();
+  instance.registerLazySingleton<AppApi>(() => AppApi(dio));
 }
 
 initSplash() {
