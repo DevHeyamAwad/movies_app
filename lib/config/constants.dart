@@ -26,6 +26,12 @@ class Constants {
   static const double mainBlurRadius = 3;
 }
 
+class ApiConstants {
+  static const String baseUrl = 'https://api.themoviedb.org/3/';
+  static const int sendTimeOutDuration = 120;
+  static const int reciveTimeOutDuration = 120;
+}
+
 class ConstantsPrefsKeys {
   static const String outBoardingViewedKey = 'out_boarding_viewed';
 }
