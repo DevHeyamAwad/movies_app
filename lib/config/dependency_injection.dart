@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get_it/get_it.dart';
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
+import 'package:movies_app/core/internet_checker/internet_checker.dart';
 import 'package:movies_app/core/network/app_api.dart';
 import 'package:movies_app/core/network/dio_factory.dart';
 import 'package:movies_app/core/storage/local/app_settings_shared_preferances.dart';
@@ -21,11 +23,25 @@ initModule() async {
       await SharedPreferences.getInstance();
 
   instance.registerLazySingleton<SharedPreferences>(() => sharedPreferance);
+
   instance.registerLazySingleton<AppSettingsSharedPreferences>(
-      () => AppSettingsSharedPreferences(instance()));
+    () => AppSettingsSharedPreferences(
+      instance(),
+    ),
+  );
+
   instance.registerLazySingleton(() => DioFactory());
   Dio dio = await instance<DioFactory>().getDio();
-  instance.registerLazySingleton<AppApi>(() => AppApi(dio));
+
+  instance.registerLazySingleton<AppApi>(
+    () => AppApi(dio),
+  );
+
+  instance.registerLazySingleton<NetWorkInfo>(
+    () => NetWorkInfoImpl(
+      InternetConnectionCheckerPlus(),
+    ),
+  );
 }
 
 initSplash() {
