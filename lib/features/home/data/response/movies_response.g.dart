@@ -9,13 +9,18 @@ part of 'movies_response.dart';
 MoviesResponse _$MoviesResponseFromJson(Map<String, dynamic> json) =>
     MoviesResponse(
       page: json['page'] as int?,
-      totalPages: json['total_pages'] as int?,
-      totalResults: json['total_results'] as int?,
+      totalPages: json['totalPages'] as int?,
+      totalResults: json['totalResults'] as int?,
+      resultsResponse: json['resultsResponse'] == null
+          ? null
+          : ResultsResponse.fromJson(
+              json['resultsResponse'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$MoviesResponseToJson(MoviesResponse instance) =>
     <String, dynamic>{
       'page': instance.page,
-      'total_pages': instance.totalPages,
-      'total_results': instance.totalResults,
+      'totalPages': instance.totalPages,
+      'totalResults': instance.totalResults,
+      'resultsResponse': instance.resultsResponse,
     };
