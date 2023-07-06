@@ -24,6 +24,12 @@ class Constants {
     4,
   );
   static const double mainBlurRadius = 3;
+}
+
+class ApiConstants {
+  static const String baseUrl = 'https://api.themoviedb.org/3/';
+  static const int sendTimeOutDuration = 120;
+  static const int reciveTimeOutDuration = 120;
   static const String adult = 'adult';
   static const String backdropPath = 'backdrop_path';
   static const String budget = 'budget';
@@ -53,16 +59,11 @@ class Constants {
   static const String resultsVoteCount = 'vote_count';
   static const String totalPages = 'total_pages';
   static const String totalResults = 'total_results';
-}
-
-class ApiConstants {
-  static const String baseUrl = 'https://api.themoviedb.org/3/';
-  static const int sendTimeOutDuration = 120;
-  static const int reciveTimeOutDuration = 120;
+  static const String genresId = 'id';
+  static const String genresName = 'name';
+  static const String resultsResponse = 'results';
 }
 
 class ConstantsPrefsKeys {
   static const String outBoardingViewedKey = 'out_boarding_viewed';
 }
-
-class RequestConstants {}
