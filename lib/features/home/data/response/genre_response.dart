@@ -1,11 +1,13 @@
 import 'package:json_annotation/json_annotation.dart';
+
+import '../../../../config/constants.dart';
 part 'genre_response.g.dart';
 
 @JsonSerializable()
 class GenresResponse {
-  @JsonKey(name: 'id')
+  @JsonKey(name: ApiConstants.genresId)
   int? id;
-  @JsonKey(name: 'name')
+  @JsonKey(name: ApiConstants.genresName)
   String? name;
 
   GenresResponse({
