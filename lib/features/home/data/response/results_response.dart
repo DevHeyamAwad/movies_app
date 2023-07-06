@@ -1,37 +1,37 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import '../../../../config/constants.dart';
+import '../../../../config/Constants.dart';
 part 'results_response.g.dart';
 
 @JsonSerializable()
 class ResultsResponse {
-  @JsonKey(name: Constants.resultsAdult)
+  @JsonKey(name: ApiConstants.resultsAdult)
   bool? adult;
-  @JsonKey(name: Constants.resultsBackdropPath)
+  @JsonKey(name: ApiConstants.resultsBackdropPath)
   String? backdropPath;
-  @JsonKey(name: Constants.genreIds)
+  @JsonKey(name: ApiConstants.genreIds)
   List<int>? genreIds;
-  @JsonKey(name: Constants.resultsId)
+  @JsonKey(name: ApiConstants.resultsId)
   int? id;
-  @JsonKey(name: Constants.resultsOriginalLanguage)
+  @JsonKey(name: ApiConstants.resultsOriginalLanguage)
   String? originalLanguage;
-  @JsonKey(name: Constants.resultsOriginalTitle)
+  @JsonKey(name: ApiConstants.resultsOriginalTitle)
   String? originalTitle;
-  @JsonKey(name: Constants.resultsOverview)
+  @JsonKey(name: ApiConstants.resultsOverview)
   String? overview;
-  @JsonKey(name: Constants.resultspopularity)
+  @JsonKey(name: ApiConstants.resultspopularity)
   double? popularity;
-  @JsonKey(name: Constants.resultsposterPath)
+  @JsonKey(name: ApiConstants.resultsposterPath)
   String? posterPath;
-  @JsonKey(name: Constants.resultsreleaseDate)
+  @JsonKey(name: ApiConstants.resultsreleaseDate)
   String? releaseDate;
-  @JsonKey(name: Constants.resultsTitle)
+  @JsonKey(name: ApiConstants.resultsTitle)
   String? title;
-  @JsonKey(name: Constants.resultsVideo)
+  @JsonKey(name: ApiConstants.resultsVideo)
   bool? video;
-  @JsonKey(name: Constants.resultsVoteAverage)
+  @JsonKey(name: ApiConstants.resultsVoteAverage)
   double? voteAverage;
-  @JsonKey(name: Constants.resultsVoteCount)
+  @JsonKey(name: ApiConstants.resultsVoteCount)
   int? voteCount;
   ResultsResponse({
     required this.adult,
