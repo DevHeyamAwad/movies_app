@@ -1,33 +1,33 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:movies_app/config/constants.dart';
+import 'package:movies_app/config/Constants.dart';
 import 'package:movies_app/features/home/data/response/genre_response.dart';
 part 'movie_response.g.dart';
 
 @JsonSerializable()
 class MovieDetailResponse {
-  @JsonKey(name: Constants.adult)
+  @JsonKey(name: ApiConstants.adult)
   bool? adult;
-  @JsonKey(name: Constants.backdropPath)
+  @JsonKey(name: ApiConstants.backdropPath)
   String? backdropPath;
-  @JsonKey(name: Constants.budget)
+  @JsonKey(name: ApiConstants.budget)
   int? budget;
-  @JsonKey(name: Constants.genres)
+  @JsonKey(name: ApiConstants.genres)
   GenresResponse? genresResponse;
-  @JsonKey(name: Constants.homepage)
+  @JsonKey(name: ApiConstants.homepage)
   String? homepage;
-  @JsonKey(name: Constants.id)
+  @JsonKey(name: ApiConstants.id)
   int? id;
-  @JsonKey(name: Constants.imdbId)
+  @JsonKey(name: ApiConstants.imdbId)
   String? imdbId;
-  @JsonKey(name: Constants.originalLanguage)
+  @JsonKey(name: ApiConstants.originalLanguage)
   String? originalLanguage;
-  @JsonKey(name: Constants.originalTitle)
+  @JsonKey(name: ApiConstants.originalTitle)
   String? originalTitle;
-  @JsonKey(name: Constants.overview)
+  @JsonKey(name: ApiConstants.overview)
   String? overview;
-  @JsonKey(name: Constants.popularity)
+  @JsonKey(name: ApiConstants.popularity)
   double? popularity;
-  @JsonKey(name: Constants.posterPath)
+  @JsonKey(name: ApiConstants.posterPath)
   String? posterPath;
 
   MovieDetailResponse({
