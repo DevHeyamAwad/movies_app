@@ -12,6 +12,26 @@ extension NonNullString on String? {
   }
 }
 
+extension NonNullInt on int? {
+  int onNull() {
+    if (this == null) {
+      return 0;
+    } else {
+      return this!;
+    }
+  }
+}
+
+extension NonNullListOfInt on List<int>? {
+  List<int> onNull() {
+    if (this == null) {
+      return [];
+    } else {
+      return this!;
+    }
+  }
+}
+
 extension NonNulldouble on double? {
   double onNull() {
     if (this == null) {
